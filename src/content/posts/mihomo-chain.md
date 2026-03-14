@@ -121,7 +121,7 @@ $server['underlying-proxy'] = "Relay"
 * 设置有效期
 * 使用高强度 Token（推荐于[1password](https://1password.com/zh-cn/password-generator)生成大于 20 位的高强度 Token）
 ![订阅创建分享链接](../../assets/images/mihomo-chain/mihomo-chain-create-share.png)
-![设置有效期](../../assets/images/mihomo-chain/mihomo-chain-Set validity period.png)    
+![设置有效期](../../assets/images/mihomo-chain/mihomo-chain-Set%20validity%20period.png)    
 
 
 ## 🛠️ 第三步：添加 Mihomo 配置模板
