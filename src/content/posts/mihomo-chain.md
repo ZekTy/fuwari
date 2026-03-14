@@ -2,7 +2,7 @@
 title: 利用 Sub-Store 生成 Mihomo 全平台通用链式代理配置
 published: 2026-01-01
 description: 借助 Sub-Store 的多订阅聚合与脚本注入能力，构建基于 Mihomo 的现代化链式代理（中转 → 落地）方案，实现全平台一致体验
-image: '"\public\mihomo-chain\mihomo-chain-cover.png"'
+image: /mihomo-chain/mihomo-chain-cover.png
 tags: [VPS,工具,教程]
 category: 教程
 draft: false
