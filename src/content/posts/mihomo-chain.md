@@ -137,7 +137,7 @@ $server['underlying-proxy'] = "Relay"
 点击底部栏`第二个`图标(文件管理)，单击左上角加号，选择类型为`文件` -> `本地`，名称随意  
 * `查询流量信息订阅链接`可填写机场订阅链接来获得流量信息  
 * 将[配置模板](https://raw.githubusercontent.com/ZekTy/mihomo-chain/refs/heads/main/yaml/mihomo-chain.yaml)中的内容全部复制并粘贴至编辑框内  
-![添加配置文件](/mihomo-chain/mihomo-chain-flie.png)   
+![添加配置文件](../../assets/images/mihomo-chain/mihomo-chain-flie.png)   
 
 ```yaml
 proxy-providers:   #截取完整文件片头演示
@@ -178,5 +178,5 @@ proxy-providers:   #截取完整文件片头演示
 :::tip[Q&A]
 如何确认链式代理已经生效？  
 在zashboard面板中可以看见类型为`Inner`的连接，节点为你在`Relay`分组中所选；可看到各网页访问路径即为正常
-![Inner](/mihomo-chain/mihomo-chain-Inner.png)  
+![Inner](../../assets/images/mihomo-chain/mihomo-chain-Inner.png)  
 :::
