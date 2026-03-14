@@ -2,7 +2,7 @@
 title: 通过 Docker 在 VPS 上部署 Sub-Store
 published: 2026-01-01
 description: '使用 Docker 快速部署 Sub-Store，实现订阅聚合与管理。'
-image: '/Sub-Store.png'
+image: '../../assets/images/Sub-Store.png'
 tags: [教程, 工具, VPS]
 category: 工具
 draft: false

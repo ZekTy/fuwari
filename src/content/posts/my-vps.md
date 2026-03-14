@@ -2,7 +2,7 @@
 title: 我的自建服务
 published: 2025-12-31
 description: '整理了部署在小鸡上的一些服务。'
-image: '/image.png'
+image: '../../assets/images/image.png'
 tags: [工具, VPS]
 category: 工具
 draft: false
