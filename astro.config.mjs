@@ -29,6 +29,7 @@ export default defineConfig({
 	site: "https://blog.inklazy.com",
 	base: "/",
 	trailingSlash: "always",
+	service: passthroughImageService(),
 	integrations: [
 		tailwind({
 			nesting: true,
