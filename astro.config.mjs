@@ -1,3 +1,4 @@
+import { defineConfig, passthroughImageService } from 'astro/config'; 
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
