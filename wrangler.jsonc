@@ -1,6 +1,6 @@
 {
   "name": "astro-theme-cactus",
-  "compatibility_date": "2025-07-13",
+  "compatibility_date": "2025-07-14",
   "assets": {
     "directory": "./dist"
   }
