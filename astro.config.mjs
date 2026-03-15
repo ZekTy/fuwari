@@ -50,6 +50,7 @@ export default defineConfig({
 		}),
 		icon({
 			include: {
+				// 必须手动添加这一行
 				"material-symbols": ["*"],
 				"fa6-brands": ["*"],
 				"fa6-regular": ["*"],
