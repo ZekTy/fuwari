@@ -1,7 +1,7 @@
 ---
-title: 利用 Sub-Store 生成 Mihomo 全平台通用链式代理配置
+title: 利用 SubStore 生成 Mihomo 全平台通用链式代理配置
 published: 2026-01-01
-description: 借助 Sub-Store 的多订阅聚合与脚本注入能力，构建基于 Mihomo 的现代化链式代理（中转 → 落地）方案，实现全平台一致体验
+description: 借助 SubStore 的多订阅聚合与脚本注入能力，构建基于 Mihomo 的现代化链式代理（中转 → 落地）方案，实现全平台一致体验
 image: "../../assets/images/mihomo-chain/mihomo-chain-cover.png"
 tags: [VPS,工具,教程]
 category: 教程
@@ -34,7 +34,7 @@ draft: false
 > 本地 → 中转节点（机场） → 独享落地节点（VPS） → 目标网站
 
 过去， Mihomo 常通过 `relay` 协议组实现链式代理，但随着内核演进，该方案已被弃用  
-本文将基于 **最新的 `dialer-proxy / underlying-proxy` 机制**，结合 **Sub-Store 的脚本注入能力**，构建一套**现代、稳定、可维护**的链式代理方案  
+本文将基于 **最新的 `dialer-proxy / underlying-proxy` 机制**，结合 **SubStore 的脚本注入能力**，构建一套**现代、稳定、可维护**的链式代理方案  
 ::github{repo="sub-store-org/Sub-Store"}  
 
 ---
@@ -42,9 +42,9 @@ draft: false
 ## 🧬 核心逻辑
 
 本方案的核心理念是：  
-**将复杂的链式逻辑完全后移至 Sub-Store 后端管理，客户端只负责选择策略**
+**将复杂的链式逻辑完全后移至 SubStore 后端管理，客户端只负责选择策略**
 
-具体做法是，在 Sub-Store 中创建 **两个完全独立、职责清晰的订阅池**
+具体做法是，在 SubStore 中创建 **两个完全独立、职责清晰的订阅池**
 
 - **中转订阅（Relay）**
   - 机场节点 / 专线入口
@@ -69,22 +69,22 @@ draft: false
 
 在开始之前，请确保你已具备以下条件：
 
-- 已部署并可正常使用 **Sub-Store**
+- 已部署并可正常使用 **SubStore**
 - 至少一条 **机场/自建订阅**（用于中转）
 - 至少一条 **自建落地节点**（如 `ss://`、`vless://` 等）
-- 基本的 Sub-Store 操作认知
+- 基本的 SubStore 操作认知
 - 以及一颗乐于折腾的心 🧠
 
 ---
 
-## 🛠️ 第二步：在 Sub-Store 中创建订阅
+## 🛠️ 第二步：在 SubStore 中创建订阅
 :::tip[提示]
 如果你有多个机场，可先分别添加为单条订阅，再通过 **组合订阅** 聚合为一个节点池，便于统一管理
 :::
 
 ### 1️⃣ 创建「纯中转」订阅（Relay）
 
-在 Sub-Store 首页点击左上角 **➕**，选择「单条 / 组合订阅」：
+在 SubStore 首页点击左上角 **➕**，选择「单条 / 组合订阅」：
 
 - **名称**：`Mihomo-chain-relay`
 - **手动选择的订阅**：勾选你的机场订阅
